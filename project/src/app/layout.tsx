@@ -7,7 +7,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="m-7 md:m-10">
+      <body className="m-7 md:m-10 max-h-screen">
         <main>{children}</main>
       </body>
     </html>
