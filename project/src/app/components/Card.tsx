@@ -1,15 +1,15 @@
 import React from "react";
-import Image from "next/image";
 import data from "../../../interface";
+// data is imported from the interface
 
 const Card = () => {
   return (
     <div className="grid lg:grid-cols-2 lg:grid-rows-2 gap-8 rounded-xl">
       {data.map((element) => {
         return (
-          <div className="relative min-w-sm md:min-h-[200px] rounded-xl shadow-xl border-black flex flex-row bg-white">
+          <div className="min-w-sm md:min-h-[200px] rounded-xl shadow-xl border-black flex flex-col md:flex-row bg-slate-100">
             {/* image */}
-            <div className="bg-red-300 rounded-xl">
+            <div className="bg-red-300 rounded-xl text-red hover:cursor-pointer">
               <img
                 src={element.img}
                 alt={element.city}
@@ -18,8 +18,8 @@ const Card = () => {
             </div>
             {/* description */}
             <div>
-              <div className="flex flex-col ml-4 flex-wrap mr-2 mb-3">
-                <h2 className="uppercase text-slate-600 font-semibold text-2xl ">
+              <div className="flex flex-col md:ml-4 ml-1 flex-wrap mr-2 mb-5">
+                <h2 className="uppercase text-slate-600 font-semibold text-2xl pt-2 ">
                   {element.city}
                 </h2>
                 <h3 className="text-slate-500 -mt-2 mb-3">{element.country}</h3>
