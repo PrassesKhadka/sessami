@@ -7,7 +7,7 @@ const Card = () => {
     <div className="grid lg:grid-cols-2 lg:grid-rows-2 gap-8 rounded-xl">
       {data.map((element) => {
         return (
-          <div className="min-w-sm md:min-h-[200px] rounded-xl shadow-xl border-black flex flex-col md:flex-row bg-slate-100">
+          <div className="min-w-sm md:min-h-[180px] rounded-xl shadow-xl border-black flex flex-col md:flex-row bg-slate-100">
             {/* image */}
             <div className="bg-red-300 rounded-xl text-red hover:cursor-pointer">
               <img
