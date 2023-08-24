@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="m-7 md:m-10 max-h-screen overscroll-none">
+      <body className="mt-7 ml-7 mr-7 mb-0 md:mr-10 md:ml-10 md:mt-10 md:mb-0 max-h-screen overscroll-none">
         <main>{children}</main>
         <Footer />
       </body>
