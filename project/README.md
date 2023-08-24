@@ -2,7 +2,7 @@
 
 [Demo Link](https://sessami-eta.vercel.app/)
 
-<img src="/screenshot.png">
+<img src="/project/screenshot.png">
 
 # Built using
 
